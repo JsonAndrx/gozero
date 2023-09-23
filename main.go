@@ -1,11 +1,9 @@
 package main
 
 import (
-	// "fmt"
-	// "runtime"
-	// "github.com/jsonandrx/gozero/variables"
-	// "github.com/jsonandrx/gozero/ejercicios"
-	"github.com/jsonandrx/gozero/teclado"
+	// "github.com/jsonandrx/gozero/teclado"
+	// "github.com/jsonandrx/gozero/iteraciones"
+	"github.com/jsonandrx/gozero/ejercicios"
 )
 
 func main() {
@@ -30,5 +28,10 @@ func main() {
 	// fmt.Println(nuero)
 	// fmt.Println(texto)
 
-	teclado.IngresoNumeros()
+	// teclado.IngresoNumeros()
+
+	// iteraciones.Iterar()
+
+	ejercicios.Multiplicar()
+
 }
