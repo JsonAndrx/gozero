@@ -3,7 +3,7 @@ package main
 import (
 	// "github.com/jsonandrx/gozero/teclado"
 	// "github.com/jsonandrx/gozero/iteraciones"
-	"github.com/jsonandrx/gozero/ejercicios"
+	"github.com/jsonandrx/gozero/funciones"
 )
 
 func main() {
@@ -32,6 +32,6 @@ func main() {
 
 	// iteraciones.Iterar()
 
-	ejercicios.Multiplicar()
+	funciones.Exponencia(100)
 
 }
