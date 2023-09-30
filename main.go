@@ -3,7 +3,8 @@ package main
 import (
 	// "github.com/jsonandrx/gozero/teclado"
 	// "github.com/jsonandrx/gozero/iteraciones"
-	"github.com/jsonandrx/gozero/users"
+	e "github.com/jsonandrx/gozero/eje_interfaces"
+	m "github.com/jsonandrx/gozero/modelos"
 )
 
 func main() {
@@ -35,6 +36,10 @@ func main() {
 	// arreglos_slices.Capacidad()
 	
 	// mapas.MostrarMapas()
+	
+	Pedro := new(m.Hombre)
+	e.HumanosRespirando(Pedro)
 
-	users.AltaUsuario()
+	Maria := new(m.Mujer)
+	e.HumanosRespirando(Maria)
 }
