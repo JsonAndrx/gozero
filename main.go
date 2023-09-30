@@ -3,7 +3,9 @@ package main
 import (
 	// "github.com/jsonandrx/gozero/teclado"
 	// "github.com/jsonandrx/gozero/iteraciones"
-	"github.com/jsonandrx/gozero/defer_panic"
+	"fmt"
+
+	"github.com/jsonandrx/gozero/gorutines"
 )
 
 func main() {
@@ -36,5 +38,11 @@ func main() {
 	
 	// mapas.MostrarMapas()
 	
-	defer_panic.EjemploPanic()
+	// defer_panic.EjemploPanic()
+	canal :=  make(chan bool)
+	go gorutines.MiNombreLento("Yeison", canal)
+	defer func ()  {
+		<- canal
+	}()
+	fmt.Println("Estoy aqui")
 }
