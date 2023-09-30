@@ -3,8 +3,7 @@ package main
 import (
 	// "github.com/jsonandrx/gozero/teclado"
 	// "github.com/jsonandrx/gozero/iteraciones"
-	e "github.com/jsonandrx/gozero/eje_interfaces"
-	m "github.com/jsonandrx/gozero/modelos"
+	"github.com/jsonandrx/gozero/defer_panic"
 )
 
 func main() {
@@ -37,9 +36,5 @@ func main() {
 	
 	// mapas.MostrarMapas()
 	
-	Pedro := new(m.Hombre)
-	e.HumanosRespirando(Pedro)
-
-	Maria := new(m.Mujer)
-	e.HumanosRespirando(Maria)
+	defer_panic.EjemploPanic()
 }
