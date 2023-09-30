@@ -1,11 +1,7 @@
 package main
 
 import (
-	// "github.com/jsonandrx/gozero/teclado"
-	// "github.com/jsonandrx/gozero/iteraciones"
-	"fmt"
-
-	"github.com/jsonandrx/gozero/gorutines"
+	"github.com/jsonandrx/gozero/middleware"
 )
 
 func main() {
@@ -35,14 +31,16 @@ func main() {
 	// iteraciones.Iterar()
 
 	// arreglos_slices.Capacidad()
-	
+
 	// mapas.MostrarMapas()
-	
+
 	// defer_panic.EjemploPanic()
-	canal :=  make(chan bool)
-	go gorutines.MiNombreLento("Yeison", canal)
-	defer func ()  {
-		<- canal
-	}()
-	fmt.Println("Estoy aqui")
+	// canal :=  make(chan bool)
+	// go gorutines.MiNombreLento("Yeison", canal)
+	// defer func ()  {
+	// 	<- canal
+	// }()
+	// fmt.Println("Estoy aqui")
+
+	middleware.MiMiddleware()
 }
