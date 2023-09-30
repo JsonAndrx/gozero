@@ -3,7 +3,7 @@ package main
 import (
 	// "github.com/jsonandrx/gozero/teclado"
 	// "github.com/jsonandrx/gozero/iteraciones"
-	"github.com/jsonandrx/gozero/mapas"
+	"github.com/jsonandrx/gozero/users"
 )
 
 func main() {
@@ -34,5 +34,7 @@ func main() {
 
 	// arreglos_slices.Capacidad()
 	
-	mapas.MostrarMapas()
+	// mapas.MostrarMapas()
+
+	users.AltaUsuario()
 }
